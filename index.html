@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NextGen is a premium digital agency in Bangladesh led by Md. Salman Farsi.">
+  <title>NextGen | Premium Digital Agency</title>
+
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%238b5cf6' rx='20'/><path d='M30 75V25h12l28 36V25h10v50H68L40 39v36z' fill='white' font-weight='bold'/></svg>"
+    type="image/svg+xml">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="bg-wrapper">
+    <div class="tech-grid"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+  </div>
+
+  <div id="scroll-progress"></div>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <div id="preloader">
+    <div class="loader-spinner"></div>
+    <span class="loader-text">N</span>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <div class="container nav-content">
+      <a href="#home" class="logo hover-trigger">
+        <span class="logo-box">N</span>extGen
+      </a>
+
+      <ul class="menu-list">
+        <li><a href="#home" class="menu-link active" data-i18n="nav_home">Home</a></li>
+        <li><a href="#services" class="menu-link" data-i18n="nav_services">Services</a></li>
+        <li><a href="#work" class="menu-link" data-i18n="nav_work">Work</a></li>
+        <li><a href="#team" class="menu-link" data-i18n="nav_team">Team</a></li>
+        <li><a href="#reviews" class="menu-link" data-i18n="nav_review">Reviews</a></li>
+        <li><a href="#pricing" class="menu-link" data-i18n="nav_pricing">Pricing</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <button id="lang-btn" class="btn-icon hover-trigger">ENG</button>
+        <button id="theme-btn" class="btn-icon hover-trigger"><i class="fas fa-moon"></i></button>
+        <a href="#contact" class="btn btn-primary hide-mobile hover-trigger magnetic" data-i18n="btn_contact">Contact
+          Us</a>
+
+        <div class="hamburger ripple-trigger" id="menu-toggle">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="hero-section section-spy">
+    <div class="container hero-content">
+      <span class="badge fade-up" data-i18n="hero_badge">#1 Digital Agency in BD</span>
+      <h1 class="hero-title fade-up delay-1">
+        <span data-i18n="hero_prefix">We Build</span> <br>
+        <span class="typing-text gradient-text"></span>
+      </h1>
+      <p class="hero-text fade-up delay-2" data-i18n="hero_desc">
+        Led by Founder & CEO Md. Salman Farsi. We transform ambitious ideas into high-performance digital reality using
+        cutting-edge technology.
+      </p>
+      <div class="hero-buttons fade-up delay-3">
+        <a href="#work" class="btn btn-primary magnetic ripple-trigger" data-i18n="btn_work">View Projects</a>
+        <a href="#contact" class="btn btn-outline magnetic ripple-trigger" data-i18n="btn_quote">Get a Quote</a>
+      </div>
+
+      <div class="stats-row fade-up delay-4">
+        <div class="stat-box">
+          <h3 class="counter" data-target="250">0</h3>
+          <p data-i18n="stat_proj">Projects</p>
+        </div>
+        <div class="stat-box">
+          <h3 class="counter" data-target="98">0</h3>
+          <p data-i18n="stat_sat">Satisfaction</p>
+        </div>
+        <div class="stat-box">
+          <h3 class="counter" data-target="15">0</h3>
+          <p data-i18n="stat_award">Awards</p>
+        </div>
+      </div>
+    </div>
+
+    <a href="#services" class="scroll-down">
+      <div class="mouse"></div>
+    </a>
+  </header>
+
+  <section id="services" class="section section-spy">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag" data-i18n="tag_expert">Expertise</span>
+        <h2 class="section-title" data-i18n="title_service">Our Services</h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="grid-4">
+        <div class="card service-card tilt-effect">
+          <div class="icon"><i class="fas fa-pencil-ruler"></i></div>
+          <h3 data-i18n="serv_1_t">Graphic Design</h3>
+          <p data-i18n="serv_1_d">Strategic branding, premium logo design, and visual identities crafted to tell your
+            brand's unique story.</p>
+        </div>
+        <div class="card service-card tilt-effect">
+          <div class="icon"><i class="fas fa-code"></i></div>
+          <h3 data-i18n="serv_2_t">Web Development</h3>
+          <p data-i18n="serv_2_d">Blazing fast websites using React.js, Next.js & Node.js. SEO-optimized and secure.</p>
+        </div>
+        <div class="card service-card tilt-effect">
+          <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3 data-i18n="serv_3_t">UI/UX Design</h3>
+          <p data-i18n="serv_3_d">Intuitive user journeys and modern interfaces prototyped in Figma to maximize
+            conversion rates.</p>
+        </div>
+        <div class="card service-card tilt-effect">
+          <div class="icon"><i class="fas fa-server"></i></div>
+          <h3 data-i18n="serv_4_t">Software Dev</h3>
+          <p data-i18n="serv_4_d">Scalable enterprise software architectures and custom ERP solutions for business
+            automation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="section bg-alt section-spy">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag" data-i18n="tag_port">Portfolio</span>
+        <h2 class="section-title" data-i18n="title_work">Selected Works</h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="filter-menu">
+        <button class="filter-btn active ripple-trigger" data-filter="all">All</button>
+        <button class="filter-btn ripple-trigger" data-filter="web">Web</button>
+        <button class="filter-btn ripple-trigger" data-filter="app">App</button>
+        <button class="filter-btn ripple-trigger" data-filter="design">Design</button>
+      </div>
+
+      <div class="grid-3 portfolio-container">
+        <div class="portfolio-item web tilt-effect">
+          <img src="images/work-3.png" alt="FinTech Dash Project" class="placeholder-img">
+          <div class="item-overlay">
+            <h4>Agency Web</h4>
+            <span>Web Development</span>
+            <div class="project-links">
+              <a href="https://github.com/salmansync/NextGenAgency" target="_blank" title="View Code" class="p-btn"><i
+                  class="fab fa-github"></i></a>
+              <a href="https://salmansync.github.io/NextGenAgency/" target="_blank" title="Live Demo" class="p-btn"><i
+                  class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item web tilt-effect">
+          <img src="images/work-1.png" alt="Corporate Web Project" class="placeholder-img">
+          <div class="item-overlay">
+            <h4>Personal Web</h4>
+            <span>Web Development</span>
+            <div class="project-links">
+              <a href="https://github.com/salmansync/Protfolio-Complete" target="_blank" title="View Code"
+                class="p-btn"><i class="fab fa-github"></i></a>
+              <a href="https://salmansync.netlify.app/" target="_blank" title="Live Demo" class="p-btn"><i
+                  class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item app tilt-effect">
+          <img src="images/work-2.png" alt="Health App Project" class="placeholder-img">
+          <div class="item-overlay">
+            <h4>Health App</h4>
+            <span>Mobile Dev</span>
+            <div class="project-links">
+              <a href="https://github.com/salmansync/CustomTkinter_Calculator_All" target="_blank" title="View Code"
+                class="p-btn"><i class="fab fa-github"></i></a>
+              <a href="https://github.com/salmansync/CustomTkinter_Calculator_All/blob/main/Output/Calcus%20Setup.exe"
+                target="_blank" title="Live Demo" class="p-btn"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="team" class="section section-spy">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag" data-i18n="tag_team">The Squad</span>
+        <h2 class="section-title" data-i18n="title_team">Meet The Leadership</h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="team-grid-5">
+        <div class="card team-member tilt-effect">
+          <div class="member-photo">
+            <img src="images/salman.jpg" alt="Md. Salman Farsi" loading="lazy">
+            <div class="member-social-overlay">
+              <a href="https://www.linkedin.com/in/salmansync/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="http://github.com/salmansync" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://salmansync.netlify.app/" target="_blank"><i class="fa-solid fa-globe"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h3 data-i18n="team_1_name">MD. SALMAN FARSI</h3>
+            <span class="role" data-i18n="team_1_role">Founder & CEO</span>
+          </div>
+        </div>
+        <div class="card team-member tilt-effect">
+          <div class="member-photo">
+            <img src="images/sumaiya.jpg" alt="Sumaiya" loading="lazy">
+            <div class="member-social-overlay"><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
+          </div>
+          <div class="member-info">
+            <h3 data-i18n="team_2_name">SUMAIYA</h3>
+            <span class="role" data-i18n="team_2_role">Content Strategist</span>
+          </div>
+        </div>
+        <div class="card team-member tilt-effect">
+          <div class="member-photo">
+            <img src="images/mahidul.jpg" alt="Md. Mahidul Islam" loading="lazy">
+            <div class="member-social-overlay"><a href="#"><i class="fab fa-github"></i></a></div>
+          </div>
+          <div class="member-info">
+            <h3 data-i18n="team_3_name">MD. MAHIDUL ISLAM</h3>
+            <span class="role" data-i18n="team_3_role">Lead Developer</span>
+          </div>
+        </div>
+        <div class="card team-member tilt-effect">
+          <div class="member-photo">
+            <img src="images/hasan.jpg" alt="Hasan Reza" loading="lazy">
+            <div class="member-social-overlay"><a href="#"><i class="fab fa-stack-overflow"></i></a></div>
+          </div>
+          <div class="member-info">
+            <h3 data-i18n="team_4_name">HASAN REZA</h3>
+            <span class="role" data-i18n="team_4_role">QA Lead</span>
+          </div>
+        </div>
+        <div class="card team-member tilt-effect">
+          <div class="member-photo">
+            <img src="images/sifat.jpg" alt="Md. Sifat Molla" loading="lazy">
+            <div class="member-social-overlay"><a href="#"><i class="fab fa-dribbble"></i></a></div>
+          </div>
+          <div class="member-info">
+            <h3 data-i18n="team_5_name">MD. SIFAT MOLLA</h3>
+            <span class="role" data-i18n="team_5_role">Design Director</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="section bg-alt section-spy">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag" data-i18n="tag_review">Testimonials</span>
+        <h2 class="section-title" data-i18n="title_review">Happy Clients</h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="review-wrapper tilt-effect glass-ui">
+        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+        <div class="review-content">
+          <p id="review-text" class="review-text">"NextGen transformed our business with their incredible web solution.
+            The attention to detail is unmatched."</p>
+          <div class="client-info">
+            <h4 id="client-name">Rahim Ahmed</h4>
+            <span id="client-role">CEO, TechBD</span>
+          </div>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top: 40px;">
+        <button id="add-review-btn" class="btn btn-outline ripple-trigger" data-i18n="btn_add_review">
+          <i class="fas fa-pen"></i> Add Your Review
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="section section-spy">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag" data-i18n="tag_price">Pricing</span>
+        <h2 class="section-title" data-i18n="title_price">Flexible Plans</h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="grid-3">
+        <div class="card price-card hover-trigger">
+          <div class="p-head">
+            <h3 data-i18n="plan_1">Starter</h3>
+            <div class="price">৳20,000</div>
+            <p class="plan-desc" data-i18n="desc_1">Best for Personal Portfolios</p>
+          </div>
+          <ul class="features">
+            <li><i class="fas fa-check-circle"></i> 5 Pages Design</li>
+            <li><i class="fas fa-check-circle"></i> Basic SEO</li>
+            <li><i class="fas fa-check-circle"></i> 1 Month Support</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline full-width ripple-trigger" data-i18n="btn_choose">Choose Plan</a>
+        </div>
+        <div class="card price-card popular hover-trigger">
+          <div class="pop-badge" data-i18n="badge_pop">Popular</div>
+          <div class="p-head">
+            <h3 data-i18n="plan_2">Business</h3>
+            <div class="price">৳50,000</div>
+            <p class="plan-desc" data-i18n="desc_2">For Startups & Agencies</p>
+          </div>
+          <ul class="features">
+            <li><i class="fas fa-check-circle"></i> Dynamic Website</li>
+            <li><i class="fas fa-check-circle"></i> Custom CMS</li>
+            <li><i class="fas fa-check-circle"></i> Advanced SEO</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary full-width magnetic ripple-trigger" data-i18n="btn_choose">Choose
+            Plan</a>
+        </div>
+        <div class="card price-card hover-trigger">
+          <div class="p-head">
+            <h3 data-i18n="plan_3">Enterprise</h3>
+            <div class="price" data-i18n="price_cust">Custom</div>
+            <p class="plan-desc" data-i18n="desc_3">Large Scale Solutions</p>
+          </div>
+          <ul class="features">
+            <li><i class="fas fa-check-circle"></i> Custom Software</li>
+            <li><i class="fas fa-check-circle"></i> Cloud & API</li>
+            <li><i class="fas fa-check-circle"></i> 1 Year Support</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline full-width ripple-trigger" data-i18n="btn_contact">Talk to
+            Expert</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section bg-alt section-spy">
+    <div class="container">
+      <div class="contact-box glass-ui">
+        <div class="contact-left">
+          <h3 data-i18n="contact_t">Let's Talk</h3>
+          <p data-i18n="contact_d">Ready to start? Fill the form or contact us directly via social media.</p>
+
+          <div class="contact-list">
+            <div class="item">
+              <div class="icon-circle"><i class="fas fa-map-marker-alt"></i></div>
+              <span data-i18n="addr">Gulshan-1, Dhaka-1212</span>
+            </div>
+            <div class="item">
+              <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+              <span>hello@nextgen.bd</span>
+            </div>
+            <div class="item">
+              <div class="icon-circle"><i class="fas fa-phone-alt"></i></div>
+              <span>+880 1712 345 678</span>
+            </div>
+          </div>
+
+          <div class="social-big">
+            <a href="https://facebook.com" target="_blank" class="ripple-trigger"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="ripple-trigger"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" class="ripple-trigger"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" class="ripple-trigger"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <form name="submit-to-google-sheet" class="contact-form" id="contact-form">
+          <div class="input-wrap">
+            <input type="text" name="Name" id="form-name" required placeholder=" "><label
+              data-i18n="form_name">Name</label>
+          </div>
+          <div class="input-wrap">
+            <input type="email" name="Email" id="form-email" required placeholder=" "><label
+              data-i18n="form_email">Email</label>
+          </div>
+          <div class="input-wrap">
+            <textarea name="Message" id="form-msg" required placeholder=" " rows="4"></textarea><label
+              data-i18n="form_msg">Message</label>
+          </div>
+
+          <span id="msg" style="color: #10b981; font-weight: bold; margin-bottom: 10px; display: block;"></span>
+
+          <button type="submit" class="btn btn-primary full-width magnetic ripple-trigger" id="form-btn"
+            data-i18n="form_send">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-col brand-col">
+        <a href="#" class="logo"><span class="logo-box">N</span>extGen</a>
+        <p data-i18n="footer_desc">We build digital futures with high-performance code and stunning design.</p>
+      </div>
+      <div class="footer-col links-col">
+        <h4>Quick Links</h4>
+        <ul class="f-links">
+          <li><a href="#home" class="ripple-trigger">Home</a></li>
+          <li><a href="#services" class="ripple-trigger">Services</a></li>
+          <li><a href="#work" class="ripple-trigger">Portfolio</a></li>
+          <li><a href="#team" class="ripple-trigger">Team</a></li>
+        </ul>
+      </div>
+      <div class="footer-col contact-col">
+        <h4>Get In Touch</h4>
+        <ul class="f-links">
+          <li><i class="fas fa-envelope"></i> salmansync.now@gmail.com</li>
+          <li><i class="fas fa-phone-alt"></i> +880 1609 330 596</li>
+          <li><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Developed by NextGen Team. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="ripple-trigger"><i class="fas fa-arrow-up"></i></button>
+
+  <div class="chat-widget">
+    <button id="chat-toggle" class="ripple-trigger"><i class="fas fa-comment-dots"></i></button>
+    <div class="chat-box" id="chat-box">
+      <div class="chat-header">
+        <div class="chat-title">
+          <div class="bot-avatar"><i class="fas fa-robot"></i></div>
+          <div>
+            <h4>NextGen AI</h4><span class="status-dot"></span> Online
+          </div>
+        </div>
+        <button id="chat-close" class="close-btn hover-trigger"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="chat-body" id="chat-body">
+        <div class="msg bot">
+          <p>Hi! Tap a question below to start chatting! 👇</p>
+        </div>
+        <div class="chat-suggestions-wrapper">
+          <div class="chat-suggestions" id="chat-suggestions"></div>
+        </div>
+      </div>
+      <div class="chat-footer">
+        <input type="text" id="chat-input" placeholder="Type a message...">
+        <button id="chat-send" class="hover-trigger"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <div id="review-modal" class="modal">
+    <div class="modal-content glass-ui">
+      <span class="close-modal hover-trigger">&times;</span>
+      <h3>Add Your Feedback</h3>
+
+      <form name="submit-review-to-google-sheet" id="review-form">
+
+        <div class="input-wrap">
+          <input type="text" name="Client_Name" required placeholder=" ">
+          <label>Client Name</label>
+        </div>
+
+        <div class="input-wrap">
+          <input type="text" name="Client_Role" required placeholder=" ">
+          <label>Client Role</label>
+        </div>
+
+        <div class="input-wrap">
+          <textarea name="Feedback" required placeholder=" " rows="3"></textarea>
+          <label>Feedback</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary full-width hover-trigger" id="review-submit-btn">Submit
+          Review</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
+
+<!-- var sheetName = 'Sheet1'
+var scriptProp = PropertiesService.getScriptProperties()
+
+function intialSetup () {
+var activeSpreadsheet = SpreadsheetApp.getActiveSpreadsheet()
+scriptProp.setProperty('key', activeSpreadsheet.getId())
+}
+
+function doPost (e) {
+var lock = LockService.getScriptLock()
+lock.tryLock(10000)
+
+try {
+var doc = SpreadsheetApp.openById(scriptProp.getProperty('key'))
+var sheet = doc.getSheetByName(sheetName)
+
+var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0]
+var nextRow = sheet.getLastRow() + 1
+
+var newRow = headers.map(function(header) {
+return header === 'timestamp' ? new Date() : e.parameter[header]
+})
+
+sheet.getRange(nextRow, 1, 1, newRow.length).setValues([newRow])
+
+return ContentService
+.createTextOutput(JSON.stringify({ 'result': 'success', 'row': nextRow }))
+.setMimeType(ContentService.MimeType.JSON)
+}
+
+catch (e) {
+return ContentService
+.createTextOutput(JSON.stringify({ 'result': 'error', 'error': e }))
+.setMimeType(ContentService.MimeType.JSON)
+}
+
+finally {
+lock.releaseLock()
+}
+} -->
